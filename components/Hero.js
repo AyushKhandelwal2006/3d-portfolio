@@ -1,4 +1,3 @@
-// components/Hero.js
 import { motion } from 'framer-motion'
 import ThreeScene from './ThreeScene'
 
@@ -16,8 +15,9 @@ export default function Hero() {
           </motion.p>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="mt-6 flex gap-3">
-            <a href="#projects" className="px-5 py-2 rounded-lg bg-primary text-white font-medium shadow hover:brightness-105 transition">See Projects</a>
-            <a href="#contact" className="px-5 py-2 rounded-lg border border-slate-700 text-slate-200">Contact</a>
+            <a href="#projects" className="px-5 py-2 rounded-lg bg-primary text-white font-medium shadow hover:brightness-105 transition">See Projects
+              
+            </a>
           </motion.div>
 
           <div className="mt-6 text-sm text-slate-500">Available for internships & cool projects.</div>
