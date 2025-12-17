@@ -6,8 +6,18 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 px-10">
-      <h2 className="text-4xl font-bold text-center mb-12">
+    <section
+      id="skills"
+      className="relative py-28 px-10 overflow-hidden"
+    >
+      {/* Purple background glow */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/2 left-1/2 h-[600px] w-[600px]
+          -translate-x-1/2 -translate-y-1/2
+          rounded-full bg-purple-600/20 blur-[160px]" />
+      </div>
+
+      <h2 className="text-4xl font-bold text-center mb-14">
         My <span className="text-primary">Skills</span>
       </h2>
 
@@ -15,7 +25,12 @@ export default function Skills() {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="rounded-xl bg-white/5 border border-white/10 py-4 text-center hover:border-primary hover:text-primary transition"
+            className="rounded-xl bg-black/60
+              border border-white/10
+              py-4 text-center
+              hover:border-primary
+              hover:text-primary
+              transition"
           >
             {skill}
           </div>
