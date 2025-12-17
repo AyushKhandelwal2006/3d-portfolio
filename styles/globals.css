@@ -2,28 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===============================
-   GLOBAL PURPLE THEME
-================================ */
-
+/* -------- GLOBAL THEME -------- */
 body {
   margin: 0;
-  padding: 0;
-  background: radial-gradient(
-    circle at top,
-    #2a004f 0%,
-    #12001f 45%,
-    #050008 100%
-  );
+  background: radial-gradient(circle at top, #2a0845, #0f051d 70%);
   color: white;
-  font-family: 'Poppins', sans-serif;
-  cursor: none; /* hide default cursor */
+  font-family: "Poppins", sans-serif;
+  cursor: none;
 }
 
-/* ===============================
-   CUSTOM WHITE FLOATING CURSOR
-================================ */
-
+/* -------- MAIN CURSOR DOT -------- */
 .custom-cursor {
   position: fixed;
   width: 8px;
@@ -33,7 +21,20 @@ body {
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  transition: transform 0.08s linear;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
+
+/* -------- FLOATING FOLLOWER -------- */
+.cursor-follower {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  backdrop-filter: blur(2px);
+}
+
 
