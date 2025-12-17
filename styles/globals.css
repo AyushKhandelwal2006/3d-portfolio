@@ -7,3 +7,37 @@ body {
   color: #fff;
   font-family: 'Poppins', sans-serif;
 }
+* {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #b983ff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgba(185, 131, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+}
+body {
+  background: radial-gradient(
+    circle at center,
+    #120c2c 0%,
+    #070510 70%
+  );
+  color: white;
+}
+
