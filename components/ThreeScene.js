@@ -1,4 +1,4 @@
-// components/ThreeScene.js
+
 import { Canvas } from "@react-three/fiber";
 import { Stars, OrbitControls } from "@react-three/drei";
 

@@ -6,7 +6,7 @@ export default function Projects() {
       </h2>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {/* Card 1 */}
+     
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
           <h3 className="text-2xl font-semibold mb-2">
             3D Portfolio Website
@@ -28,7 +28,7 @@ export default function Projects() {
           </a>
         </div>
 
-        {/* Card 2 */}
+       
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
           <h3 className="text-2xl font-semibold mb-2">
             Weather App

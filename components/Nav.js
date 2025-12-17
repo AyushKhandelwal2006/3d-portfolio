@@ -6,16 +6,16 @@ export default function Nav({ theme, toggleTheme }) {
 
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
 
-        {/* Logo */}
+        
         <a href="/" className="text-xl font-bold">Ayush Khandelwal</a>
 
-        {/* Links */}
+       
         <div className="flex items-center gap-6">
           <a href="#projects" className="text-sm font-medium hover:text-primary">Projects</a>
           <a href="#skills" className="text-sm font-medium hover:text-primary">Skills</a>
          
 
-          {/* Social Icons */}
+          
          <a
   href="https://github.com/AyushKhandelwal2006"
   target="_blank"
@@ -41,7 +41,7 @@ export default function Nav({ theme, toggleTheme }) {
   <Mail size={20} />
 </a>
 
-          {/* Theme Toggle */}
+         
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition"
