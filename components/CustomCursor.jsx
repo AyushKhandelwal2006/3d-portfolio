@@ -1,32 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function CustomCursor() {
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
-    const cursor = document.querySelector(".cursor");
-    const follower = document.querySelector(".cursor-follower");
-
-    let x = 0, y = 0;
-    let fx = 0, fy = 0;
-
-    document.addEventListener("mousemove", (e) => {
-      x = e.clientX;
-      y = e.clientY;
-      cursor.style.transform = `translate(${x}px, ${y}px)`;
-    });
-
-    const loop = () => {
-      fx += (x - fx) * 0.1;
-      fy += (y - fy) * 0.1;
-      follower.style.transform = `translate(${fx}px, ${fy}px)`;
-      requestAnimationFrame(loop);
+    const move = (e) => {
+      setPos({ x: e.clientX, y: e.clientY });
     };
-    loop();
+    window.addEventListener("mousemove", move);
+    return () => window.removeEventListener("mousemove", move);
   }, []);
 
   return (
-    <>
-      <div className="cursor"></div>
-      <div className="cursor-follower"></div>
-    </>
+    <div
+      className="custom-cursor"
+      style={{
+        left: pos.x,
+        top: pos.y,
+      }}
+    />
   );
 }

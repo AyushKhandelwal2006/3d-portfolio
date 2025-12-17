@@ -2,42 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #000;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-}
-* {
-  cursor: none;
-}
+/* ===============================
+   GLOBAL PURPLE THEME
+================================ */
 
-.cursor {
-  position: fixed;
-  width: 6px;
-  height: 6px;
-  background: #b983ff;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-
-.cursor-follower {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  border: 2px solid rgba(185, 131, 255, 0.6);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-}
 body {
+  margin: 0;
+  padding: 0;
   background: radial-gradient(
-    circle at center,
-    #120c2c 0%,
-    #070510 70%
+    circle at top,
+    #2a004f 0%,
+    #12001f 45%,
+    #050008 100%
   );
   color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: none; /* hide default cursor */
+}
+
+/* ===============================
+   CUSTOM WHITE FLOATING CURSOR
+================================ */
+
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.08s linear;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
 }
 
