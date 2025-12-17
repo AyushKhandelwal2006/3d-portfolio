@@ -1,5 +1,5 @@
-import Projects from "@/components/Projects";
-import Nav from "@/components/Nav";
+import Projects from "../components/Projects";
+import Nav from "../components/Nav";
 
 export default function ProjectsPage() {
   return (
