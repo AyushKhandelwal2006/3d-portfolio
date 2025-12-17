@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#2563eb",  // Custom premium blue color
+        primary: "#a855f7",       // purple
+        primaryDark: "#7e22ce",
       },
     },
   },
   plugins: [],
 };
+

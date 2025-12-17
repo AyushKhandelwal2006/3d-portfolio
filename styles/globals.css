@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -------- GLOBAL THEME -------- */
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #2a0845, #0f051d 70%);
+  padding: 0;
+  background: radial-gradient(circle at top, #2e1065, #020617);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   cursor: none;
 }
 
-/* -------- MAIN CURSOR DOT -------- */
+/* main cursor dot */
 .custom-cursor {
   position: fixed;
   width: 8px;
@@ -19,22 +19,19 @@ body {
   background: white;
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
   z-index: 9999;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-}
-
-/* -------- FLOATING FOLLOWER -------- */
-.cursor-follower {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 9998;
-  backdrop-filter: blur(2px);
 }
 
-
+/* trailing glow */
+.cursor-trail {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
+}
