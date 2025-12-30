@@ -31,11 +31,11 @@ export default function Projects() {
        
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
           <h3 className="text-2xl font-semibold mb-2">
-            Weather App
+            Rohit Sharma Portfolio Website
           </h3>
 
           <p className="text-gray-300 mb-4">
-            Rohit Sharma Portfolio Website
+            A next.js,tailwind.css project
           </p>
 
           <p className="text-sm text-primary mb-4">
