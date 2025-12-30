@@ -35,15 +35,15 @@ export default function Projects() {
           </h3>
 
           <p className="text-gray-300 mb-4">
-            Real-time weather forecasting using OpenWeather API.
+            Rohit Sharma Portfolio Website
           </p>
 
           <p className="text-sm text-primary mb-4">
-            React · API · TailwindCSS
+            React · API · TailwindCSS · next.js
           </p>
 
           <a
-            href="#"
+            href="https://rohit-sharma-portfolio-tau.vercel.app/"
             className="text-primary hover:text-primaryDark transition"
           >
             View Project →
