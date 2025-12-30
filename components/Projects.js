@@ -44,6 +44,8 @@ export default function Projects() {
 
           <a
             href="https://rohit-sharma-portfolio-tau.vercel.app/"
+             target="_blank"
+            rel="noopener noreferrer"
             className="text-primary hover:text-primaryDark transition"
           >
             View Project →
