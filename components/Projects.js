@@ -43,13 +43,17 @@ export default function Projects() {
           </p>
 
           <a
+           
             href="https://rohit-sharma-portfolio-tau.vercel.app/"
-             target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:text-primaryDark transition"
-          >
-            View Project →
-          </a>
+            target="_blank"
+          rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+  className="text-primary hover:text-primaryDark transition"
+>
+  View Project →
+</a>
+
+          
         </div>
       </div>
     </section>
