@@ -9,19 +9,19 @@ export default function Projects() {
      
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
           <h3 className="text-2xl font-semibold mb-2">
-            3D Portfolio Website
+            Foodiehub 
           </h3>
 
           <p className="text-gray-300 mb-4">
-            A Next.js + Three.js based portfolio with interactive 3D models.
+            A Next.js + Three.js + TailwindCSS based project 
           </p>
 
           <p className="text-sm text-primary mb-4">
-            Next.js · Three.js · TailwindCSS
+            Next.js · Three.js · TailwindCSS · Lucide Icons
           </p>
 
           <a
-            href="#"
+            href="https://foodiehub-lake.vercel.app/"
             className="text-primary hover:text-primaryDark transition"
           >
             View Project →
@@ -35,11 +35,11 @@ export default function Projects() {
           </h3>
 
           <p className="text-gray-300 mb-4">
-            A next.js,tailwind.css project
+            A  frontend focused project with stats, career timeline and gallery access.
           </p>
 
           <p className="text-sm text-primary mb-4">
-            React · API · TailwindCSS · next.js
+            React · API · TailwindCSS · Next.js
           </p>
 
           <a
@@ -52,9 +52,8 @@ export default function Projects() {
 >
   View Project →
 </a>
+</div>
 
-          
-        </div>
       </div>
     </section>
   );
