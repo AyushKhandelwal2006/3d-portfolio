@@ -22,6 +22,9 @@ export default function Projects() {
 
           <a
             href="https://foodiehub-lake.vercel.app/"
+            target="_blank"
+          rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
             className="text-primary hover:text-primaryDark transition"
           >
             View Project →
