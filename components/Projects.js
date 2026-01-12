@@ -57,6 +57,32 @@ export default function Projects() {
 </a>
 </div>
 
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
+          <h3 className="text-2xl font-semibold mb-2">
+            Digital Freeform Board
+          </h3>
+
+          <p className="text-gray-300 mb-4">
+            A  frontend focused project which is a digital board using neobrutal designs.
+          </p>
+
+          <p className="text-sm text-primary mb-4">
+            React · API · TailwindCSS · Next.js · UI/UX
+          </p>
+
+          <a
+           
+            href="https://csi-inky.vercel.app/"
+            target="_blank"
+          rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+  className="text-primary hover:text-primaryDark transition"
+>
+  View Project →
+</a>
+</div>
+
       </div>
     </section>
   );
