@@ -83,6 +83,32 @@ export default function Projects() {
 </a>
 </div>
 
+
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-primary transition">
+          <h3 className="text-2xl font-semibold mb-2">
+           Imperial Stays-Hotel Booking Website
+          </h3>
+
+          <p className="text-gray-300 mb-4">
+            Created a modern hotel booking system featuring protected routes for login, real-time state updates, and debounce optimization for efficient user input handling.
+          </p>
+
+          <p className="text-sm text-primary mb-4">
+            React · API · TailwindCSS · Next.js · UI/UX
+          </p>
+
+          <a
+           
+            href="https://imperial-stays.vercel.app/"
+            target="_blank"
+          rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+  className="text-primary hover:text-primaryDark transition"
+>
+  View Project →
+</a>
+</div>
+
       </div>
     </section>
   );
