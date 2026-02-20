@@ -46,7 +46,7 @@ export default function Nav({ theme, toggleTheme }) {
             onClick={toggleTheme}
             className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition"
           >
-            {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+            {theme === "dark" ? <Moon size={18} /> : <Sun size={18} />}
           </button>
         </div>
       </div>
